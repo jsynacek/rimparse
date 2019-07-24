@@ -1,0 +1,20 @@
+name:                rimparse
+version:             0.1
+homepage:            https://github.com/jsynacek/rimparse
+license:             BSD3
+license-file:        LICENSE
+author:              Jan Synáček
+maintainer:          jan.synacek@gmail.com
+copyright:           2019 Jan Synáček
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable rimparse
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -fno-warn-name-shadowing
+  build-depends:       base >= 4.7 && < 5
+                     , bytestring
+                     , xeno
